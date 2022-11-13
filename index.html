@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="container">
+          <img src="/imgs/brand.png" alt="" />
+          <div class="data">
+            <div class="city-date">
+              <h1 id="name">Tehran</h1>
+              <p><span id="hrs">13</span>:<span id="mn">30</span> - <span id="dw">Sunday</span> - <span id="mth">10</span> <span id="dte">10</span> <span id="yrs">2022</span></p>
+            </div>
+            <div class="forecast">
+              <h2 id="temp">15</h2>
+              <div class="condition-icon">
+                <img
+                  id="conditionIcon"
+                  src="https://img.icons8.com/emoji/96/null/sun-emoji.png"
+                />
+                <p id="description">Sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <article>
+        <div class="container">
+          <form id="form">
+            <input type="text" id="cityInupt" placeholder="Search Location.." />
+            <i class="fa fa-search"></i>
+          </form>
+          <div class="article-content">
+            <ul class="default-city">
+              <li class="city">Tehran</li>
+              <li class="city">Pecan</li>
+              <li class="city">Tokyo</li>
+              <li class="city">Paris</li>
+              <li class="city">London</li>
+            </ul>
+            <ul class="weather-detail">
+              <li>Weather Detaile:</li>
+              <li><span>Pressure</span><span id="pressure">5%</span></li>
+              <li><span>Humidity</span><span id="humidity">10%</span></li>
+              <li><span>Wind</span><span id="wind">10%</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script src="getData.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>
